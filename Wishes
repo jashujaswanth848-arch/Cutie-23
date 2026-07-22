@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Princess ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="loader">
+<h1>Loading Love ❤️</h1>
+</div>
+
+<div class="hearts"></div>
+<div class="balloons"></div>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+<div class="overlay">
+
+<h2 class="subtitle">
+A Special Birthday Celebration
+</h2>
+
+<h1 class="title">
+
+Happy Birthday
+
+<span>My Princess</span>
+
+</h1>
+
+<img src="photo.jpg" class="photo">
+
+<h3 class="name">
+Charishma ❤️
+</h3>
+
+<p class="message">
+
+Every smile of yours is priceless.
+
+May your life always be filled with happiness,
+
+good health,
+
+endless success,
+
+beautiful memories,
+
+and unconditional love.
+
+You deserve every beautiful thing in this world.
+
+Never stop smiling because your smile makes everyone around you happy.
+
+Happy Birthday once again,
+
+My Princess.
+
+❤️
+
+</p>
+
+<button id="playMusic">
+
+🎵 Play Music
+
+</button>
+
+</div>
+
+</section>
+
+<section class="countdownSection">
+
+<h2>
+
+Countdown
+
+</h2>
+
+<div id="countdown">
+
+Loading...
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>
+
+Beautiful Memories
+
+</h2>
+
+<div class="images">
+
+<img src="photo.jpg">
+
+<img src="photo.jpg">
+
+<img src="photo.jpg">
+
+</div>
+
+</section>
+
+<section class="letter">
+
+<h2>
+
+A Letter From
+
+Jashwanth ❤️
+
+</h2>
+
+<p>
+
+Dear Charishma,
+
+You are one of the most precious blessings in my life.
+
+I always wish to see you smiling because your happiness means a lot to me.
+
+May this birthday bring unlimited joy,
+
+success,
+
+peace,
+
+love,
+
+and wonderful opportunities into your life.
+
+May all your dreams come true.
+
+Stay happy forever.
+
+Happy Birthday My Princess.
+
+With lots of love,
+
+Jashwanth ❤️
+
+</p>
+
+</section>
+
+<section class="surprise">
+
+<button id="surpriseBtn">
+
+🎁 Click For Surprise
+
+</button>
+
+</section>
+
+<footer>
+
+Made with ❤️ by Jashwanth
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
