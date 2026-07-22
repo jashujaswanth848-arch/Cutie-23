@@ -1,0 +1,74 @@
+// Loading Screen
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }, 2000);
+});
+
+// Music
+const music = document.getElementById("music");
+const playBtn = document.getElementById("playMusic");
+
+playBtn.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        playBtn.innerHTML = "⏸ Pause Music";
+    } else {
+        music.pause();
+        playBtn.innerHTML = "🎵 Play Music";
+    }
+});
+
+// Countdown
+const birthday = new Date("July 23, 2026 00:00:00").getTime();
+
+setInterval(() => {
+
+    const now = new Date().getTime();
+
+    const distance = birthday - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (distance > 0) {
+
+        document.getElementById("countdown").innerHTML =
+            `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+
+    } else {
+
+        document.getElementById("countdown").innerHTML =
+            "🎉 Happy Birthday Charishma ❤️";
+
+    }
+
+}, 1000);
+
+// Surprise Button
+document.getElementById("surpriseBtn").addEventListener("click", () => {
+
+    alert("🎉 Happy Birthday My Princess ❤️\n\nMay your life always be filled with happiness, success, love and beautiful memories!\n\n— Jashwanth ❤️");
+
+    createFireworks();
+
+});
+
+// Fireworks
+function createFireworks() {
+
+    for (let i = 0; i < 60; i++) {
+
+        let firework = document.createElement("div");
+
+        firework.className = "firework";
+
+        firework.style.left = Math.random() * window.innerWidth + "px
